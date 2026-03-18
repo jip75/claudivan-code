@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClaudIvan Code v1.0</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #1a1a1a;
+    color: #e8e8e8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    padding: 40px 32px;
+    max-width: 860px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  .header {
+    margin-bottom: 36px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+  .header p {
+    font-size: 13px;
+    color: #888;
+  }
+  .section {
+    margin-bottom: 36px;
+  }
+  .section h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+  .section .subtitle {
+    font-size: 12px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 14px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  thead tr {
+    border-bottom: 1px solid #3a3a3a;
+  }
+  thead th {
+    text-align: left;
+    padding: 8px 12px;
+    color: #aaa;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  tbody tr {
+    border-bottom: 1px solid #2a2a2a;
+  }
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+  tbody td {
+    padding: 10px 12px;
+    vertical-align: middle;
+  }
+  code {
+    background: #2d2020;
+    color: #e07070;
+    font-family: 'SF Mono', 'Fira Code', 'Menlo', monospace;
+    font-size: 13px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .rule-box {
+    background: #222;
+    border: 1px solid #333;
+    border-left: 3px solid #e07070;
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  .rule-box strong { color: #e8e8e8; }
+  .combos-table tbody td:first-child { width: 40%; }
+  .combos-table tbody td:last-child { color: #aaa; font-size: 13px; }
+  .rules-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .rules-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #2a2a2a;
+    font-size: 14px;
+    color: #ccc;
+  }
+  .rules-list li:last-child { border-bottom: none; }
+  .rules-list li span {
+    color: #e07070;
+    font-weight: 700;
+    margin-right: 8px;
+  }
+  .emoji-col { font-size: 20px; }
+  .tag-code {
+    background: #1e2a1e;
+    color: #70c070;
+    font-family: 'SF Mono', 'Fira Code', 'Menlo', monospace;
+    font-size: 13px;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+  .flag-code {
+    background: #1e2020;
+    color: #70a0e0;
+    font-family: 'SF Mono', 'Fira Code', 'Menlo', monospace;
+    font-size: 13px;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🗂️ ClaudIvan Code — v1.2</h1>
+  <p>Personal Shorthand Reference &nbsp;·&nbsp; Updated March 17, 2026 &nbsp;·&nbsp; Open in Chrome</p>
+</div>
+
+<!-- LAYER 1 -->
+<div class="section">
+  <h2>LAYER 1 — Action Codes</h2>
+  <p class="subtitle">type before your request</p>
+  <table>
+    <thead>
+      <tr><th>Code</th><th>Means</th><th>Example</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>f:</code></td><td>Fix this</td><td><code>f: [ring]</code></td></tr>
+      <tr><td><code>b:</code></td><td>Build this</td><td><code>b: [mcp]</code></td></tr>
+      <tr><td><code>r:</code></td><td>Rewrite / redo</td><td><code>r: last response</code></td></tr>
+      <tr><td><code>c:</code></td><td>Check / verify</td><td><code>c: [cfg]</code></td></tr>
+      <tr><td><code>u:</code></td><td>Update</td><td><code>u: [note]</code></td></tr>
+      <tr><td><code>s:</code></td><td>Save / document</td><td><code>s: >note</code></td></tr>
+      <tr><td><code>t:</code></td><td>Test this</td><td><code>t: [ring]</code></td></tr>
+      <tr><td><code>d:</code></td><td>Display / show me the output</td><td><code>d: [ring]</code></td></tr>
+      <tr><td><code>+:</code></td><td>Add this</td><td><code>+: weather tool</code></td></tr>
+      <tr><td><code>-:</code></td><td>Remove this</td><td><code>-: old ring entry</code></td></tr>
+      <tr><td><code>?:</code></td><td>Answer me this</td><td><code>?: FastMCP</code></td></tr>
+      <tr><td><code>&gt;&gt;</code></td><td>Session ping — I respond "Hello." Nothing else.</td><td><code>&gt;&gt;</code> after restart</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- LAYER 2 -->
+<div class="section">
+  <h2>LAYER 2 — Context Tags</h2>
+  <p class="subtitle">wrap in brackets — stackable</p>
+  <table>
+    <thead>
+      <tr><th>Tag</th><th>Means</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="tag-code">[ring]</span></td><td>Ring cameras / doorbells</td></tr>
+      <tr><td><span class="tag-code">[wx]</span></td><td>Weather</td></tr>
+      <tr><td><span class="tag-code">[3dp]</span></td><td>3D printing / Bambu</td></tr>
+      <tr><td><span class="tag-code">[laser]</span></td><td>Falcon 2 laser engraver</td></tr>
+      <tr><td><span class="tag-code">[mcp]</span></td><td>MCP server</td></tr>
+      <tr><td><span class="tag-code">[cfg]</span></td><td>Config file</td></tr>
+      <tr><td><span class="tag-code">[app]</span></td><td>Claude desktop app</td></tr>
+      <tr><td><span class="tag-code">[term]</span></td><td>Terminal command</td></tr>
+      <tr><td><span class="tag-code">[note]</span></td><td>Apple Notes</td></tr>
+      <tr><td><span class="tag-code">[home]</span></td><td>Home / family stuff</td></tr>
+      <tr><td><span class="tag-code">[pref]</span></td><td>Preferences / settings</td></tr>
+      <tr><td><span class="tag-code">[sonos:fr]</span></td><td>Sonos — Family Room (Connect)</td></tr>
+      <tr><td><span class="tag-code">[sonos:mb]</span></td><td>Sonos — Main Bedroom (Connect:Amp)</td></tr>
+    </tbody>
+  </table>
+  <div class="rule-box">
+    ⚙️ <strong>Tags stack — more tags = more specific</strong><br>
+    <code>c: [ring]</code> → check ring in general &nbsp;|&nbsp; <code>c: [ring][mcp]</code> → check Ring MCP specifically
+  </div>
+</div>
+
+<!-- LAYER 3 -->
+<div class="section">
+  <h2>LAYER 3 — Output Flags</h2>
+  <p class="subtitle">put at the end with &gt;</p>
+  <table>
+    <thead>
+      <tr><th>Flag</th><th>Means</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="flag-code">&gt;note</span></td><td>Save to Apple Notes</td></tr>
+      <tr><td><span class="flag-code">&gt;term</span></td><td>Terminal command only</td></tr>
+      <tr><td><span class="flag-code">&gt;file</span></td><td>Create a file</td></tr>
+      <tr><td><span class="flag-code">&gt;short</span></td><td>Brief answer only</td></tr>
+      <tr><td><span class="flag-code">&gt;table</span></td><td>Format as table</td></tr>
+      <tr><td><span class="flag-code">&gt;steps</span></td><td>Step-by-step instructions</td></tr>
+      <tr><td><span class="flag-code">&gt;fix</span></td><td>Show only the fix, no explanation</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- LAYER 4 -->
+<div class="section">
+  <h2>LAYER 4 — Quick Status Signals</h2>
+  <table>
+    <thead>
+      <tr><th>Signal</th><th>Means</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="emoji-col">✅</td><td>Done / confirmed</td></tr>
+      <tr><td class="emoji-col">⚡</td><td>Urgent / do this first</td></tr>
+      <tr><td class="emoji-col">🔄</td><td>Retry / something failed</td></tr>
+      <tr><td class="emoji-col">💾</td><td>Save this somewhere</td></tr>
+      <tr><td class="emoji-col">🚫</td><td>Stop / cancel</td></tr>
+      <tr><td class="emoji-col">👀</td><td>Review before doing anything</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- COMBOS -->
+<div class="section">
+  <h2>EXAMPLE COMBOS</h2>
+  <table class="combos-table">
+    <thead>
+      <tr><th>You type</th><th>I understand</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>c: [ring][mcp] &gt;short</code></td><td>Check Ring MCP status, brief only</td></tr>
+      <tr><td><code>b: [mcp] &gt;term</code></td><td>Build MCP, give Terminal commands</td></tr>
+      <tr><td><code>d: [ring]</code></td><td>Show Ring device output</td></tr>
+      <tr><td><code>s: last response &gt;note</code></td><td>Save that to Apple Notes</td></tr>
+      <tr><td><code>⚡ f: [cfg] &gt;fix</code></td><td>Urgent — fix the config, no lecture</td></tr>
+      <tr><td><code>c: [wx][mcp] &gt;short</code></td><td>Check Weather MCP status, brief only</td></tr>
+      <tr><td><code>d: [cfg]</code></td><td>Show me the config file contents</td></tr>
+      <tr><td><code>t: [ring] &gt;short</code></td><td>Test ring — pass/fail only</td></tr>
+      <tr><td><code>&gt;&gt;</code></td><td>Session ping — Claude replies "Hello." Nothing else.</td></tr>
+    </tbody>
+  </table>
+
+  <div style="margin-top: 24px; background: #1e1e1e; border: 1px solid #333; border-radius: 8px; padding: 16px 20px;">
+    <div style="font-size: 12px; color: #888; margin-bottom: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">🎵 Sonos Commands</div>
+    <div style="font-family: 'SF Mono', 'Fira Code', 'Menlo', monospace; font-size: 13px; line-height: 2;">
+      <div><span style="color: #e07070;">+: [sonos:fr] play</span></div>
+      <div><span style="color: #e07070;">-: [sonos:fr] pause</span></div>
+      <div><span style="color: #e07070;">+: [sonos:fr] volume 40</span></div>
+      <div><span style="color: #e07070;">+: [sonos:mb] volume 25</span></div>
+      <div><span style="color: #e07070;">d: [sonos:fr]</span> <span style="color: #666;">&nbsp;→ what's playing</span></div>
+      <div><span style="color: #e07070;">+: [sonos:fr] next</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- RULES -->
+<div class="section">
+  <h2>RULES</h2>
+  <ul class="rules-list">
+    <li><span>1.</span> Tags stack — more tags = more specific</li>
+    <li><span>2.</span> Output flag always goes at the end</li>
+    <li><span>3.</span> Status signals can go anywhere</li>
+    <li><span>4.</span> When in doubt, <code>d:</code> = show me</li>
+  </ul>
+</div>
+
+</body>
+</html>
